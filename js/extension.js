@@ -1,8 +1,8 @@
 (function() {
   class ExampleExtension extends window.Extension {
     constructor() {
-      super('example-extension');
-      this.addMenuEntry('Example Extension');
+      super('mqtt-client-extension');
+      this.addMenuEntry('Mqtt Client Extension');
 
       this.content = '';
       fetch(`/extensions/${this.id}/views/content.html`)
