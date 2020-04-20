@@ -1,0 +1,51 @@
+{
+  "name": "mqtt-client-extension",
+  "display_name": "MQTT Client Extension",
+  "version": "0.1.0",
+  "description": "Mqtt client extension add-on for Mozilla WebThings Gateway",
+  "author": "flax1k",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "mozilla",
+    "iot",
+    "extension",
+    "mqtt"
+  ],
+  "homepage": "https://github.com/flax1k/mqtt-client-extension",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flax1k/mqtt-client-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flax1k/mqtt-client-extension/issues"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "SHA256SUMS",
+    "css/extension.css",
+    "mqtt-client-extension.js",
+    "images/menu-icon.svg",
+    "index.js",
+    "js/extension.js",
+    "manifest.json",
+    "views/content.html"
+  ],
+  "moziot": {
+    "api": {
+      "min": 2,
+      "max": 2
+    },
+    "type": "extension",
+    "plugin": true,
+    "exec": "{nodeLoader} {path}"
+  }
+}
